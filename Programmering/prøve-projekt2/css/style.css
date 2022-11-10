@@ -1,0 +1,117 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: #EDEDED;
+}
+
+/*nav start*/
+
+.logo_img{
+    width: 244px;
+    height: 250px;
+    margin:10px 0 10px 0 ;
+    z-index: 1;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: #172F31;
+    height: 150px;
+    width: 100%;
+}
+
+ul a{
+    color: #FFFFFF;
+  text-decoration: none;
+}
+
+nav a:hover{
+    color:#FADB9F;
+    transition: 0.5s;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0; 
+}
+
+nav li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 60px;
+    margin: 30px;
+    float: left;
+}
+
+nav input[type=text]{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    width: 260px;
+    margin: 30px;
+    border: none;
+    font-size: 18px;
+}
+/*Navation done*/
+
+/*main starter*/
+
+.container{ /*dette er min div, hvor background billedet*/
+    background-size: cover;
+    position: relative;
+}
+
+.background_img{ /*Dette er på selve background billede*/
+    width: 100%;
+    height: 80vh; /*vh så den passe til alle størrelse skærme*/
+}
+
+article{ /*dette er selve placeringen af articlen*/
+    position:absolute;
+    width: 80%;
+    background-color: #FFFFFF;
+    height: 500%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0;
+    top:65%;
+}
+
+h1{
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    margin:50px;
+}
+article button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin: 0px 33px 20px 0px;
+}
+h2{
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.lyd-icon{
+    height: 21,66px;
+    width: 22,23px;
+}
+
