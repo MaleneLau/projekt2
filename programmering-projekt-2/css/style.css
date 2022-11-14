@@ -1,0 +1,337 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+nav img{
+    width: 144px;
+    height: auto;
+    z-index: 1;
+    margin-top: 5%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80px;
+    width: 100%;
+    background-color: #172F31;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0 0 0 0;
+    
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 50px;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Tahoma', Geneva, Verdana, sans-serif;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #f9cf80;
+    transition: 0.5s;
+}
+
+nav li{
+    text-align: center;
+}
+
+.søgefelt input{
+    width: 170px;
+    height: 38px;
+}
+
+/*nav færdig */
+
+/*main start */
+
+body{
+    background-color: #EDEDED;
+}
+main{
+    min-height: 3300px;
+}
+.container-1{
+    background-size: cover;
+    position: relative;
+}
+
+.background-img{
+    width: 100%;
+    height: 80vh;
+}
+/*Selve artiklen */
+article{
+    position: absolute;
+    width: 80%;
+    background-color: #fff;
+    height: 2800px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0;
+    top: 65%;
+}
+
+h1{
+    font-weight: bold;
+    font-family: 'Tahoma', Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    margin-top: 40px;
+    margin-left: 55px;
+}
+/*Knapper*/
+article button{
+    width: 195px;
+    height: 45px;
+    margin-top: 30px;
+    margin-right: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.first-button{
+    margin-left: 55px;
+}
+
+/*Tekst indhold*/
+h2{
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Tahoma', Geneva, Verdana, sans-serif;
+    margin-top: 22px;
+    margin-left: 55px;
+}
+
+p{
+    margin-top: 25px;
+    margin-left: 55px;
+    margin-right: 55px;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h3{
+    margin-left: 55px;
+    margin-top: 5%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Tahoma', Geneva, Verdana, sans-serif;
+}
+
+article img{
+    height: auto;
+    width: 900px;
+    margin: 50px 55px 0px 55px;
+}
+
+/*delmaalene start*/
+.container-2{
+    display: inline-block;
+    vertical-align: top;
+    vertical-align: middle;
+}
+.container-2 img{
+    width: 10%;
+    float: left;
+    padding: 0;
+    margin: 10px 10px 0 55px;
+    clear: left;
+}
+
+.container-2 p{
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    vertical-align: middle; 
+}
+
+.tekst-ikon-2{
+    margin-top: 8%;
+}
+
+.tekst-ikon-3{
+    margin-top: 7%;
+}
+
+.tekst-ikon-4{
+    margin-top: 5%;
+}
+
+.tekst-ikon-5{
+    margin-top: 4%;
+}
+
+/*delmaalene slut*/
+/*grid fn 17 verdensiconer*/
+.container-3{
+    display: block;
+    margin-left: 55px;
+    margin-right: 55px;
+    margin-top: 5px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.grid img{
+    margin: 0;
+    max-width: 100%;
+    height: auto;
+}
+/*Grid færdig*/
+
+/*footer*/
+footer{
+    bottom: 0;
+    width: 100%;
+    height: 370px;
+    background-color: #172F31;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer img{
+    width: 144px;
+    height: auto;
+    margin: 0 10px 0 20px;
+    padding: 0;
+}
+.mail-tfl h4, .hvem h4, .information h4, .nyhedsbrev-form h4{
+    color:#fff;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+.mail-tfl{
+    color:#fff;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 30px 0 30px;
+}
+
+.mail-tfl p{
+    margin: 0px;
+}
+
+.adresse-cvr{
+    color:#fff;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 30px 0 30px;
+}
+
+.adresse-cvr p{
+    margin: 0px;
+}
+
+.hvem{
+    margin: 0 30px 0 30px;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #f9cf80;
+    transition: 0.5s;
+}
+footer ul{
+    list-style-type: none;
+    padding: 0 0 0 0; 
+    margin: 5px;
+}
+
+footer li{
+    margin: 0;
+}
+
+.information{
+    margin: 0 30px 0 30px;
+}
+
+/* /*form start */
+
+.nyhedsbrev-form{
+    margin: 0 30px 0 30px;
+}
+.nyhedsbrev-form p{
+    color:#fff;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5px 0 5px 0 ;
+}
+
+.visually-hidden{ /*Bootstrap defineret class som fjerner element fra skærm, men som stadig kan læses af skærmlæseren*/
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	padding: 0 !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	clip: rect(0,0,0,0) !important;
+	white-space: nowrap !important;
+	border: 0 !important;
+}
+
+input[type=text], input[type=text]{
+    border-radius: 5px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 125px;
+    padding: 5px;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+input[type=email]{
+    border-radius: 5px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 250px;
+    padding: 5px;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+input[type=submit]{
+    background-color: #f9cf80;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 250px;
+    color: black;
+    padding: 5px;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
