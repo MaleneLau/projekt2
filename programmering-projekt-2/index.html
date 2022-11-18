@@ -4,35 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FN 13 Verdensmål</title>
+    <title>Webtilgængelighed</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/2fd9f648ed.js" crossorigin="anonymous"></script> <!--Dette er for iconerne vises-->
 </head>
 <body>
    <header>
     <nav>
-        <img src="img/Logo_light_mode.png" alt="Logo">
+        <a class="logo" href="#"><img src="img/Logo_light_mode.png" alt="Logo"></a>
         <ul>
             <li><a href="#">Verdensmål</a></li>
             <li><a href="#">Kontakt os</a></li>
             <li><a href="#">Menu</a></li>
         </ul>
-        <input class="søgefelt" type="text" placeholder="Søgefelt">
+        <form class="søgefelt-header">
+             <label class="visually-hidden" for="søgefelt">Søgefelt</label>        
+            <input class="søgefelt" type="text" placeholder="Søgefelt">
+        </form>
+        <a class="brugermenu" href="#"><img class="img-brugermenu" src="img/brugermenu.png" alt=""></a>
     </nav>
    </header>
    <main>
-    <div class="container-1">
-        <img class="background-img" src="img/background_img_projekt.png" alt="baggrundsbillede">
+    <div class="main-article">
+        <img class="background-img" src="img/background_img_projekt.png" alt="baggrundsbillede" aria-hidden="true">
     </div>
-    <article>
+    <article class="article">
         <h1>FN 13 Verdensmål</h1>
-        <button class="first-button">Læs højt</button>
-        <button>Større skrift</button>
-        <button>Mørkt</button>
-        <button>Engelsk</button>
+        <button class="btn"><i class="fa-solid fa-volume-high"></i>Læs højt</button>
+        <button class="btn"><i class="fa-solid fa-bold"></i>Større skrift</button>
+        <button class="btn"><i class="fa-solid fa-moon"></i>Mørkt</button>
+        <button class="btn"><i class="fa-solid fa-earth-europe"></i>Engelsk</button>
         <h2>Handle hurtigt for at bekæmpe klimaforandringer og deres konsekvenser</h2>
         <p class="first-part">Det er muligt at se drastiske konsekvenser af klimaforandringer over alt i verden. Udledningen af drivhusgasser fortsætter med at sige, og udledningen er idag mere end 50% højere end i 1990. Endvidere forårsager den globale opvarmning langvarige ændringer i vores klimasystem, som truer med uoprettelige konsekvenser, hvis vi ikke handler lige nu. </p>
-        <br>
-        <br>
         <h3>Det årlige tab</h3>
         <p>
         De gennemsnitlige årlige tab fra tropiske cykloner og oversvømmelser kan tælles i flere hundreder milliarder kroner, og kræver en årlig investering på 40 milliarder kroner i katastrofestyring alene. Det 13 mål er at mobilisere ca. 680 miliarder kroner om året i 2020 for at imødekomme udviklingslandenes behov samt bidrage til afbødning af klimarelaterede katastrofer. 
@@ -48,70 +51,73 @@
         <br>
 
         Det 13 verdensmål, er et af de 17 verdensmål, som indgår i udviklingsdagsordenen for bæredygtig udvikling frem mod 2030. En integreret tilgang er afgørende for frenskridt på tværs af de forskellige mål.</p>
-        <img src="img/dan-stark-hEceQrBaIiE-unsplash.jpg" alt="Smuk skov">
+        <img src="img/dan-stark-hEceQrBaIiE-unsplash.jpg" alt="Smuk skov" aria-hidden="true">
+        
         <!--Delmaalene-->
-        <h3>Verdensmål 13 i delmål</h3>
-            <!-- ol>li*5>img.img-ikon+p.text-ikon -->
-            <ol class="container-2">
-                <li>
-                    <img src="img/13.1-icon.png" alt="13.1 ikon" class="img-ikon">
-                    <p class="text-ikon">13.1) Modstandskraft og tilpasningsevne til klimarelaterede risici og naturkatastrofer i alle lange skal styrkes.</p>
-                </li>
-                <li>
-                    <img src="img/13.2-icon.png" alt="13.2 ikon" class="img-ikon">
-                    <p class="text-ikon">13.2) Tiltag mod klimaforandringer skal integreres i nationale politikker, strategier og planlægning</p>
-                </li>
-                <li>
-                    <img src="img/13.3-icon.png" alt="13.3 ikon" class="img-ikon">
-                    <p class="text-ikon">13.3) Undervisning, oplysning og den menneskelige og institutionelle kapacitet skal forbedres ift. modvirkning, tilpasning, skadesbegrænsning og tidlig varsling af klimaændringer. </p>
-                </li>
-                <li>
-                    <img src="img/13a-icon.png" alt="13a ikon" class="img-ikon">
-                    <p class="text-ikon">13.a) De udviklede landes forpligtelse, som underskrivere af FN’s Rammekonvention om Klimaændringer, skal indfris, til målet om i fællesskab at mobilisere 100 mia. USD årligt inden 2020 fra alle kilder, for at imødekomme udviklingslandenes behov for meningsfulde modvirkningstiltag og gennemskuelighed ved gennemførelse, og Den Grønne Klimafond skal kapitaliseres snarest muligt.</p>
-                </li>
-                <li>
-                    <img src="img/13b-icon.png" alt="13b ikon" class="img-ikon">
-                    <p class="text-ikon">13.b) Der skal fremmes mekanismer, der kan øge kapaciteten til effektiv planlægning og forvaltning, som relaterer sig til klimaændringer i de mindst udviklede lande og små udviklingsøstater, og med fokus på kvinder, de unge samt lokale og marginaliserede samfund.</p>
-                </li>
-            </ol>
-        <h3>Her har du mulighed for om de andre verdensmål</h3>
-        <section class="container-3">
+        <h3 class="delmål">Verdensmål 13 i delmål</h3>
+        <ol class="delmål-indhold">
+            <li>
+                <img src="img/13.1-icon.png" alt="13.1 ikon" class="img-ikon">
+                <p class="text-ikon">13.1) Modstandskraft og tilpasningsevne til klimarelaterede risici og naturkatastrofer i alle lange skal styrkes.</p>
+            </li>
+            <li>
+                <img src="img/13.2-icon.png" alt="13.2 ikon" class="img-ikon">
+                <p class="text-ikon">13.2) Tiltag mod klimaforandringer skal integreres i nationale politikker, strategier og planlægning</p>
+            </li>
+            <li>
+                <img src="img/13.3-icon.png" alt="13.3 ikon" class="img-ikon">
+                <p class="text-ikon">13.3) Undervisning, oplysning og den menneskelige og institutionelle kapacitet skal forbedres ift. modvirkning, tilpasning, skadesbegrænsning og tidlig varsling af klimaændringer. </p>
+            </li>
+            <li>
+                <img src="img/13a-icon.png" alt="13a ikon" class="img-ikon">
+                <p class="text-ikon">13.a) De udviklede landes forpligtelse, som underskrivere af FN’s Rammekonvention om Klimaændringer, skal indfris, til målet om i fællesskab at mobilisere 100 mia. USD årligt inden 2020 fra alle kilder, for at imødekomme udviklingslandenes behov for meningsfulde modvirkningstiltag og gennemskuelighed ved gennemførelse, og Den Grønne Klimafond skal kapitaliseres snarest muligt.</p>
+            </li>
+            <li>
+                <img src="img/13b-icon.png" alt="13b ikon" class="img-ikon">
+                <p class="text-ikon">13.b) Der skal fremmes mekanismer, der kan øge kapaciteten til effektiv planlægning og forvaltning, som relaterer sig til klimaændringer i de mindst udviklede lande og små udviklingsøstater, og med fokus på kvinder, de unge samt lokale og marginaliserede samfund.</p>
+            </li>
+        </ol>
+
+        <!--Grid område-->
+        <section class="grid-område">
+            <h3>Her kan du læse alle 17 Verdensmål</h3>
             <div class="grid">
-                <img src="img/icon-1.png" alt=""></img>
-                <img src="img/icon-2.png" alt=""></img>
-                <img src="img/icon-3.png" alt=""></img>
-                <img src="img/icon-4.jpg" alt=""></img>
-                <img src="img/icon-5.png" alt=""></img>
-                <img src="img/icon-6.png" alt=""></img>
-                <img src="img/icon-7.png" alt=""></img>
-                <img src="img/icon-8.png" alt=""></img>
-                <img src="img/icon-9.png" alt=""></img>
-                <img src="img/icon-10.gif" alt=""></img>
-                <img src="img/icon-11.gif" alt=""></img>
-                <img src="img/icon-12.png" alt=""></img>
-                <img src="img/icon-13.gif" alt=""></img>
-                <img src="img/icon-14.png" alt=""></img>
-                <img src="img/icon-15.gif" alt=""></img>
-                <img src="img/icon-16.gif" alt=""></img>
-                <img src="img/icon-17.png" alt=""></img>
-                <img src="img/verdensmaalene-icon.png" alt=""></img>
+                <a href="#"><img src="img/icon-1.png" alt="Her kan du læse mere om nr 1 verdensmål" aria-hidden="true"></a>
+                <a href="#"><img src="img/icon-2.png" alt="Her kan du læse mere om nr 2 verdensmål" aria-hidden="true"></a>
+                <a href="#"><img src="img/icon-3.png" alt="Her kan du læse mere om nr 3 verdensmål" aria-hidden="true"></a>
+                <a href="#"><img src="img/icon-4.jpg" alt="Her kan du læse mere om nr 4 verdensmål" aria-hidden="true"></a>
+                <a href="#"><img src="img/icon-5.png" alt="Her kan du læse mere om nr 5 verdensmål" aria-hidden="true"></a>
+                <a href="#"><img src="img/icon-6.png" alt="Her kan du læse mere om nr 6 verdensmål" aria-hidden="true"></a>
+                <a href="#"><img src="img/icon-7.png" alt="Her kan du læse mere om nr 7 verdensmål" aria-hidden="true"></a>
+                <a href="#"><img src="img/icon-8.png" alt="Her kan du læse mere om nr 8 verdensmål" aria-hidden="true"></a>
+                <a href="#"><img src="img/icon-9.png" alt="Her kan du læse mere om nr 9 verdensmål" aria-hidden="true"></a>
+                <a href="#"><img src="img/icon-10.gif" alt="Her kan du læse mere om nr 10 verdensmål" aria-hidden="true"></a>
+                <a href="#"><img src="img/icon-11.gif" alt="Her kan du læse mere om nr 11 verdensmål" aria-hidden="true"></a>
+                <a href="#"><img src="img/icon-12.png" alt="Her kan du læse mere om nr 12 verdensmål" aria-hidden="true"></a>
+                <a href="#"><img src="img/icon-13.gif" alt="Her kan du læse mere om nr 13 verdensmål" aria-hidden="true"></a>
+                <a href="#"><img src="img/icon-14.png" alt="Her kan du læse mere om nr 14 verdensmål" aria-hidden="true"></a>
+                <a href="#"><img src="img/icon-15.gif" alt="Her kan du læse mere om nr 15 verdensmål" aria-hidden="true"></a>
+                <a href="#"><img src="img/icon-16.gif" alt="Her kan du læse mere om nr 16 verdensmål" aria-hidden="true"></a>
+                <a href="#"><img src="img/icon-17.png" alt="Her kan du læse mere om nr 17 verdensmål" aria-hidden="true"></a>
+                <a href="#"><img src="img/verdensmaalene-icon.png" alt="Ikon af verdensmaalene" aria-hidden="true"></a>
             </div>
         </section>
-        <p>Hvis du vil læse mere angående FN' verdensmål, er det muligt at gøre det her: https://www.verdensmaalene.dk/
+        <p class="links">Hvis du vil læse mere angående FN' verdensmål, er det muligt at gøre det her <a href="https://www.verdensmaalene.dk/">https://www.verdensmaalene.dk/</a>
             <br>
             <br>
             <br>
-            Denne tekst har fået inspiration og information fra verdensmål 13 på deres egen hjemme side. https://www.verdensmaalene.dk/maal/13</p>
+            Denne tekst har fået inspiration og information fra verdensmål 13 på deres egen hjemme side. <a href="https://www.verdensmaalene.dk/">https://www.verdensmaalene.dk/maal/13</a></p>
     </article>
    </main>
    <!--Footer starter her-->
    <footer>
     <div class="footer-img">
-        <img src="img/Logo_light_mode.png" alt="Logo">
+        <a href="#"><img src="img/Logo_light_mode.png" alt="Logo"></a>
     </div>
     <div class="mail-tfl">
         <h4>Email:</h4>
         <p>fakemail@gmail.com</p>
+        <br>
         <h4>Telefonnummer:</h4>
         <p>75 75 75 75</p>
     </div>
@@ -146,7 +152,7 @@
     <div class="nyhedsbrev-form">
         <h4>Nyhedsbrev</h4>
         <p>Modtag nyheder, historier fra projekterne,ansøgningsfrister mv.</p>
-        <form action="">
+        <form>
             <label class="visually-hidden" for="navn">fornavn</label>
             <input placeholder="Fornavn" id="navn" type="text" required>
 
